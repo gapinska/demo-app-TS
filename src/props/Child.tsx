@@ -8,12 +8,7 @@ interface ChildProps {
 // }
 
 export const Child = ({ color, onClick }: ChildProps) => {
-  return (
-    <div>
-      {color}
-      <button onClick={onClick}>Click</button>
-    </div>
-  )
+  return <div>{color}</div>
 }
 
 export const ChildAsFC: React.FC<ChildProps> = ({
