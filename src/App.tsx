@@ -2,7 +2,8 @@ import React from "react"
 import "./App.css"
 import EventComponent from "./events/EventComponent"
 import GuestList from "./state/GuestList"
-import UserSearch from "./state/UserSearch"
+// import UserSearch from "./state/UserSearch"
+import UserSearch from "./refs/UserSearch"
 import UserSearch1 from "./state/UserSearch1"
 
 const users = [
@@ -14,7 +15,8 @@ const users = [
 function App() {
   return (
     <div className="App">
-      <UserSearch1 users={users} />
+      <UserSearch />
+      {/* <UserSearch1 users={users} /> */}
       {/* <EventComponent/> */}
       {/* <UserSearch/> */}
       {/* <GuestList /> */}
